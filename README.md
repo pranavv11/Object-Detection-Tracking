@@ -13,18 +13,18 @@ It uses a custom-trained [YOLOv11](https://github.com/ultralytics/ultralytics) m
    <pre><code>git lfs install
    git clone https://github.com/pranavv11/Object-Detection-Tracking.git
    </code></pre>
-1. Clone the Yolov7_StrongSORT_OSNet repository and set directory
+2. Clone the Yolov7_StrongSORT_OSNet repository and set directory
    <pre><code>git clone https://github.com/mikel-brostrom/Yolov7_StrongSORT_OSNet.git
    </code></pre>
-2. Install all the dependencies
+3. Install all the dependencies
    <pre><code>pip install -r requirements.txt</code></pre>
    or
     <pre><code>pip install .</code></pre>
-3. Download the required model weights from **[osnet_x0_25_msmt17.pt](https://github.com/KaiyangZhou/deep-person-reid)**
+4. Download the required model weights from **[osnet_x0_25_msmt17.pt](https://github.com/KaiyangZhou/deep-person-reid)**
    
-4. Prepare the test video in `.mp4` format
+5. Prepare the test video in `.mp4` format
    
-5. Run the tracking command in terminal
+6. Run the tracking command in terminal
 <pre> <code> boxmot track Models/yolov8_best.pt
         Models/osnet_x0_25_msmt17.pt 2 
       --source Test/15sec_input_720p.mp4
@@ -35,9 +35,9 @@ It uses a custom-trained [YOLOv11](https://github.com/ultralytics/ultralytics) m
       --name run1
       --verbose 
 </code></pre>
-6. Find your output
+7. Find your output
  <pre>Yolov7_StrongSORT_OSNet/Output/run1/15sec_input_720p.avi</pre>
-7. Tune StrongSORT behavior (Optional)
+8. Tune StrongSORT behavior (Optional)
 To improve tracking quality or reduce identity switches, you can pass additional parameters via command line or change them in source code:
 <pre>
 a. --max-ageNumber of frames to keep lost tracks alive
