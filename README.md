@@ -8,6 +8,11 @@ This project performs **player detection and tracking** on football match videos
 It uses a custom-trained [YOLOv11](https://github.com/ultralytics/ultralytics) model to detect multiple players in each frame. For robust tracking, it integrates the [StrongSORT](https://github.com/mikel-brostrom/boxmot) algorithm, enhanced with a [OSNet](https://github.com/KaiyangZhou/deep-person-reid) Re-Identification (ReID) model. This combination helps maintain consistent player IDs across frames and reduces ID switches during partial occlusions.
 
 # Steps to run the tracker
+1. Clone the Repository (with Git LFS support)
+   To properly download the pretrained model weights, ensure you have Git LFS installed:
+   <pre><code>git lfs install
+   git clone https://github.com/pranavv11/Object-Detection-Tracking.git
+   </code></pre>
 1. Clone the Yolov7_StrongSORT_OSNet repository and set directory
    <pre><code>git clone https://github.com/mikel-brostrom/Yolov7_StrongSORT_OSNet.git
    </code></pre>
