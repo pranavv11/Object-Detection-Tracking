@@ -1,7 +1,5 @@
 # Player Detection and Tracking with YOLOv11 + StrongSORT + OSNet
 
-![Tracking Demo](Test/embedd.gif)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pranavv11/Object-Detection-Tracking/blob/main/Object-Detection-Tracking/Tracker.ipynb)
 
 # Introduction
 This project performs **player detection and tracking** on football match videos in `.mp4` format.
